@@ -22,3 +22,22 @@ print()
 fromValue = float(input(f"Enter {fromUnit}: "))
 print()
 
+match conversionNumber:
+    case 1:
+        toValue = fromValue / 1.609344
+        print(f"{fromValue} {fromUnit} -> {toValue} {toUnit}")
+    case 2:
+        toValue = fromValue * 1.609344
+        print(f"{fromValue} {fromUnit} -> {toValue} {toUnit}")
+    case 3:
+        toValue = fromValue * 2.20462262
+        print(f"{fromValue} {fromUnit} -> {toValue} {toUnit}")
+    case 4:
+        toValue = fromValue / 2.20462262
+        print(f"{fromValue} {fromUnit} -> {toValue} {toUnit}")
+    case 5:
+        toValue = (fromValue - 32.0) * (5.0 / 9.0)
+        print(f"{fromValue} {fromUnit} -> {toValue} {toUnit}")
+    case 6:
+        toValue = (fromValue * (9.0 / 5.0)) + 32.0    
+        print(f"{fromValue} {fromUnit} -> {toValue} {toUnit}")
