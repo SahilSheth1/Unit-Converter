@@ -11,3 +11,14 @@ print("Conversions Available: \n")
 
 for conversionNumber, fromUnit, toUnit in conversionsAvailable:
     print(f'{conversionNumber}). {fromUnit} -> {toUnit}')
+    
+print()
+conversion = input("Enter the number of the conversion you wish to use: ")
+conversionIndex = int(conversion) - 1
+
+conversionNumber, fromUnit, toUnit = conversionsAvailable[conversionIndex]
+print()
+
+fromValue = float(input(f"Enter {fromUnit}: "))
+print()
+
